@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './react.svg'
 import './Home.css'
 import { Flex, Text, Image, Button } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const Home: React.FC = () => {
 	const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ const Home: React.FC = () => {
 			<Button onClick={() => setCount((count) => count + 1)}>
 				Click Me
 			</Button>
+			<Link to="posts">Posts</Link>
 		</Flex>
 	)
 }
