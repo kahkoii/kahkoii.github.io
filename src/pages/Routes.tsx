@@ -10,7 +10,7 @@ const App: React.FC = () => (
 			{/* Public Pages */}
 			<Route path="/" element={<Home />} />
 			<Route path="/posts" element={<Posts />} />
-			<Route path="*" element={<Error />} />
+			<Route path="/*" element={<Error />} />
 		</Routes>
 	</Router>
 )
